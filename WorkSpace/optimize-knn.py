@@ -94,5 +94,5 @@ if __name__ == '__main__':
     print("test score: %3f" % (score))
     print("best parameter: %s " % (grid.best_params_))
     print("best score: %s " % (grid.best_score_))
-    print(grid.grid_scores_)
+
     
