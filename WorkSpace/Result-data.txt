@@ -1,0 +1,151 @@
+﻿结果与其他变量的相关系数
+
+0.082085	日类型
+-0.038958	节假日
+-0.795677	温度
+-0.117682	月份
+0.824423	t-1
+0.831454	t
+-0.138052	日类型
+-0.050491	节假日
+-0.799975	温度
+-0.122395	月份
+0.892422	t-1
+0.900016	t
+-0.228808	日类型
+-0.096316	节假日
+-0.798034	温度
+-0.126392	月份
+
+11-1
+
+779.8593311360021
+
+linear (score: 0.909 fit: 0.008s, predict: 0.000s)
+tree (score: 0.874 fit: 0.094s, predict: 0.002s)
+svr (score: 0.925 fit: 9.092s, predict: 1.579s)
+KNN (score: 0.931 fit: 0.259s, predict: 0.574s)
+RandomForest (score: 0.928 fit: 1.550s, predict: 0.029s)
+Adaboost (score: 0.869 fit: 0.950s, predict: 0.029s)
+GBRT (score: 0.919 fit: 0.906s, predict: 0.009s)
+
+
+13-1
+
+689.5093082599697
+
+linear 	(mse: 995.156262 	score: 0.910 	fit: 0.012s, 	predict: 0.000s)
+tree 	(mse: 1327.661464 	score: 0.880 	fit: 0.149s, 	predict: 0.002s)
+svr 	(mse: 766.877299 	score: 0.931 	fit: 12.425s, 	predict: 1.799s)
+KNN 	(mse: 718.623586 	score: 0.935 	fit: 0.195s, 	predict: 0.623s)
+RanF	(mse: 714.487161 	score: 0.936 	fit: 1.569s, 	predict: 0.027s)
+Ada	    (mse: 1402.487856 	score: 0.874 	fit: 1.114s, 	predict: 0.027s)
+GBRT 	(mse: 878.762985 	score: 0.921 	fit: 0.933s, 	predict: 0.009s)
+
+
+
+
+KNN 	(mse: 690.242646 	score: 0.938 	fit: 0.262s, 	predict: 2.065s)
+n_neighbors=8,weights='distance',algorithm='ball_tree'
+
+RanF 	(mse: 692.569563 	score: 0.938 	fit: 32.376s, 	predict: 0.559s)
+n_estimators=50
+
+svr 	(mse: 693.208457 	score: 0.938 	fit: 18.857s, 	predict: 1.474s)
+C=2.5,gamma=1,kernel='rbf'
+
+SVR:
+fit time: 621.863929s
+best parameter: {'C': 2.5, 'gamma': 1, 'kernel': 'rbf'} 
+best score: 0.9391215331532956 
+有些参数下会出现死循环
+
+AllData
+标准化
+linear (mse: 989.461857 score: 0.906 fit: 0.036s, predict: 0.001s)
+tree (mse: 1269.539993 score: 0.879 fit: 0.348s, predict: 0.005s)
+svr (mse: 690.558383 score: 0.934 fit: 191.216s, predict: 6.613s)
+KNN (mse: 671.758576 score: 0.936 fit: 0.941s, predict: 8.416s)
+MLP (mse: 727.282299 score: 0.931 fit: 87.789s, predict: 0.071s)
+RandomForest (mse: 657.356038 score: 0.937 fit: 74.221s, predict: 1.319s)
+Adaboost (mse: 1325.210667 score: 0.874 fit: 2.465s, predict: 0.060s)
+GBRT (mse: 898.588698 score: 0.915 fit: 2.172s, predict: 0.021s)
+归一化
+linear (mse: 989.461857 score: 0.906 fit: 0.018s, predict: 0.001s)
+tree (mse: 1292.746208 score: 0.877 fit: 0.287s, predict: 0.004s)
+svr (mse: 833.342234 score: 0.921 fit: 5.101s, predict: 0.602s)
+KNN (mse: 663.604871 score: 0.937 fit: 1.634s, predict: 6.374s)
+MLP (mse: 885.759085 score: 0.916 fit: 25.015s, predict: 0.062s)
+RandomForest (mse: 659.283049 score: 0.937 fit: 80.789s, predict: 1.384s)
+Adaboost (mse: 1279.765165 score: 0.878 fit: 2.622s, predict: 0.065s)
+GBRT (mse: 898.584895 score: 0.915 fit: 2.324s, predict: 0.020s)
+
+数据集分开之后
+linear (mse: 923.337773 score: 0.717 fit: 0.028s, predict: 0.000s)
+tree (mse: 1496.637285 score: 0.541 fit: 0.486s, predict: 0.001s)
+svr (mse: 861.199016 score: 0.736 fit: 62.777s, predict: 1.518s)
+KNN (mse: 1050.578903 score: 0.678 fit: 1.838s, predict: 0.672s)
+MLP (mse: 914.922585 score: 0.719 fit: 114.493s, predict: 0.009s)
+RandomForest (mse: 835.583931 score: 0.744 fit: 95.649s, predict: 0.191s)
+Adaboost (mse: 1405.213602 score: 0.569 fit: 3.445s, predict: 0.013s)
+GBRT (mse: 879.885026 score: 0.730 fit: 3.132s, predict: 0.002s)
+
+knn 0.6754 
+maindata1 0.597976  
+Data-Test 0.655409
+AllData 0.881161
+
+svr 0.7357  寻优过后0.5916
+
+MLP 0.7314
+maindata1 0.715259 
+Data-Test 0.7314
+AllData 0.881161
+
+加入月份之后
+linear (mse: 918.718751 score: 0.718 fit: 0.038s, predict: 0.000s)
+tree (mse: 1577.558468 score: 0.516 fit: 0.577s, predict: 0.001s)
+svr (mse: 945.273174 score: 0.710 fit: 69.390s, predict: 1.607s)
+KNN (mse: 1237.892258 score: 0.620 fit: 1.916s, predict: 0.683s)
+MLP (mse: 871.084043 score: 0.733 fit: 7.930s, predict: 0.002s)
+RandomForest (mse: 898.505798 score: 0.724 fit: 118.022s, predict: 0.187s)
+Adaboost (mse: 1409.864330 score: 0.567 fit: 3.747s, predict: 0.010s)
+GBRT (mse: 912.278126 score: 0.720 fit: 4.015s, predict: 0.002s)
+老师的能到0.8132
+
+MATLAB pso 21% 3.9%
+1.一个中肯的性能
+    linear (mse: 918.718751 score: 0.718 fit: 0.051s, predict: 0.001s)
+        error max:0.526 mean:0.090
+    tree (mse: 1743.040511 score: 0.465 fit: 0.651s, predict: 0.001s)
+        error max:0.610 mean:0.099
+    svr (mse: 1257.666441 score: 0.614 fit: 705.079s, predict: 2.094s)
+        error max:0.564 mean:0.101
+    KNN (mse: 1237.892258 score: 0.620 fit: 5.447s, predict: 1.336s)
+        error max:0.550 mean:0.094
+    MLP (mse: 984.036107 score: 0.698 fit: 12.646s, predict: 0.004s)
+        error max:0.555 mean:0.094
+    RandomForest (mse: 903.699504 score: 0.723 fit: 187.166s, predict: 0.300s)
+        error max:0.526 mean:0.091
+    Adaboost (mse: 1357.753769 score: 0.583 fit: 6.839s, predict: 0.014s)
+        error max:0.434 mean:0.082
+    GBRT (mse: 912.357539 score: 0.720 fit: 9.206s, predict: 0.004s)
+        error max:0.512 mean:0.089
+
+2.对天气做一些处理后
+    linear (mse: 936.700567 score: 0.713 fit: 0.057s, predict: 0.001s)
+        error max:0.535 mean:0.092
+    tree (mse: 1700.946425 score: 0.478 fit: 0.954s, predict: 0.000s)
+        error max:0.610 mean:0.099
+    svr (mse: 1248.041378 score: 0.617 fit: 6105.878s, predict: 1.463s)
+        error max:0.574 mean:0.094
+    KNN (mse: 1599.584839 score: 0.509 fit: 2.023s, predict: 0.755s)
+        error max:0.554 mean:0.092
+    MLP (mse: 1100.630666 score: 0.662 fit: 5.331s, predict: 0.000s)
+        error max:0.528 mean:0.087
+    RandomForest (mse: 898.943910 score: 0.724 fit: 99.913s, predict: 0.187s)
+        error max:0.522 mean:0.091
+    Adaboost (mse: 1352.536239 score: 0.585 fit: 3.570s, predict: 0.012s)
+        error max:0.425 mean:0.082
+    GBRT (mse: 899.737301 score: 0.724 fit: 3.853s, predict: 0.006s)
+        error max:0.509 mean:0.089
